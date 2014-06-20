@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F43C6AB119548B0F008858FC /* CreditCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C6AB019548B0F008858FC /* CreditCardView.m */; };
 		F4439545195258C200C3AE84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4439544195258C200C3AE84 /* Foundation.framework */; };
 		F4439547195258C200C3AE84 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4439546195258C200C3AE84 /* CoreGraphics.framework */; };
 		F4439549195258C200C3AE84 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4439548195258C200C3AE84 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F43C6AAF19548B0F008858FC /* CreditCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreditCardView.h; sourceTree = SOURCE_ROOT; };
+		F43C6AB019548B0F008858FC /* CreditCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditCardView.m; sourceTree = SOURCE_ROOT; };
 		F4439541195258C200C3AE84 /* CreditCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4439544195258C200C3AE84 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4439546195258C200C3AE84 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,12 +115,14 @@
 		F443954A195258C200C3AE84 /* CreditCard */ = {
 			isa = PBXGroup;
 			children = (
+				F443955C195258C200C3AE84 /* Images.xcassets */,
+				F43C6AAF19548B0F008858FC /* CreditCardView.h */,
+				F43C6AB019548B0F008858FC /* CreditCardView.m */,
 				F4439553195258C200C3AE84 /* AppDelegate.h */,
 				F4439554195258C200C3AE84 /* AppDelegate.m */,
 				F4439556195258C200C3AE84 /* Main.storyboard */,
 				F4439559195258C200C3AE84 /* ViewController.h */,
 				F443955A195258C200C3AE84 /* ViewController.m */,
-				F443955C195258C200C3AE84 /* Images.xcassets */,
 				F443954B195258C200C3AE84 /* Supporting Files */,
 			);
 			path = CreditCard;
@@ -252,6 +257,7 @@
 				F443955B195258C200C3AE84 /* ViewController.m in Sources */,
 				F4439555195258C200C3AE84 /* AppDelegate.m in Sources */,
 				F4439551195258C200C3AE84 /* main.m in Sources */,
+				F43C6AB119548B0F008858FC /* CreditCardView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +462,7 @@
 				F4439575195258C200C3AE84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4439576195258C200C3AE84 /* Build configuration list for PBXNativeTarget "CreditCardTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				F4439578195258C200C3AE84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

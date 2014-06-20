@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CreditCardView.h"
 
 @interface ViewController : UIViewController
 

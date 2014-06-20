@@ -8,7 +8,9 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate, CreditCardDelegate>
+
+@property (strong, nonatomic) CreditCardView *creditCardView;
 
 @end
 
@@ -17,13 +19,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.creditCardView = [[CreditCardView alloc] initWithFrame:CGRectMake(0, 100, 320, 100)];
+    self.creditCardView.delegate = self;
+    [self.view addSubview:self.creditCardView];
+
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)dismissKeyboard
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self.creditCardView dismissAllKeyboards];
+}
+
+- (void)creditCardCompleted:(BOOL)creditCardValid withCreditCardNumber:(NSString *)cardNumber withExpirationDate:(NSString *)expirationDate withCVVNumber:(NSString *)cvv
+{
+    NSLog(@"XXX");
+    
 }
 
 @end
